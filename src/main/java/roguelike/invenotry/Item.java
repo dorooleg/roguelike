@@ -8,13 +8,13 @@ import java.awt.*;
 public class Item {
 
     private int attackValue;
-
     public int attackValue() { return attackValue; }
     public void modifyAttackValue(int amount) { attackValue += amount; }
 
-    public int defenseValue;
+    private int defenseValue;
     public int defenseValue() { return defenseValue; }
     public void modifyDefenseValue(int amount) { defenseValue += amount; }
+
     private char glyph;
     public char glyph() { return glyph; }
 

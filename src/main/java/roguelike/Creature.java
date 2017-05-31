@@ -238,7 +238,7 @@ public class Creature {
         ai.onUpdate();
     }
 
-    public boolean catEnter(int wx, int wy) {
+    public boolean canEnter(int wx, int wy) {
         return world.tile(wx, wy).isGround() && world.creature(wx, wy) == null;
     }
 

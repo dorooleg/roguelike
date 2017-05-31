@@ -10,6 +10,7 @@ import roguelike.invenotry.Item;
 public class DropScreen extends InventoryBasedScreen {
 
     private final static Logger logger = Logger.getLogger(DropScreen.class);
+
     public DropScreen(Creature player) {
         super(player);
         logger.debug("DropScreen");

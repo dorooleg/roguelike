@@ -16,14 +16,17 @@ public class EquipScreen extends InventoryBasedScreen {
         logger.debug("EquipScreen");
     }
 
+    @Override
     protected String getVerb() {
         return "wear or wield";
     }
 
+    @Override
     protected boolean isAcceptable(Item item) {
         return item.attackValue() > 0 || item.defenseValue() > 0;
     }
 
+    @Override
     protected Screen use(Item item) {
         if (player.isEquipped(item)) {
             player.unequip(item);
